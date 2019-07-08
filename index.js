@@ -1,7 +1,9 @@
 var katzDeliLine = [];
+var placeInLine = 1;
 
-function takeANumber(katzDeliLine,name){
-  katzDeliLine.push(`${name}`);
+function takeANumber(katzDeliLine){
+  katzDeliLine.push(placeInLine);
+  placeInLine = placeInLine + 1;
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
